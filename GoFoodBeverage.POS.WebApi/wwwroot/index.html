@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="./default/bootstrap.css" />
+    <link rel="stylesheet" href="./default/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./default/style.css" />
+  </head>
+  <body>
+    <!-- Start Loader -->
+    <div class="loading" style="display: none">
+      <div class="loader">
+        <img class="loader-img" src="./default/loader.svg" />
+        <span> Loading... </span>
+      </div>
+    </div>
+    <!-- End Loader -->
+    <!-- Start Header -->
+    <header class="page-header" id="page-header">
+      <div class="container-full">
+        <div class="navbar-header">
+          <!-- Logo -->
+          <a
+            class="logo animated onstart fadeInDown visible"
+            data-animation-delay="200"
+            data-animation="fadeInDown"
+            href="#"
+          >
+            <strong></strong>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="page-wrap fullpage-wrapper"
+      id="fullpage"
+      style="height: 100%; position: relative"
+    >
+      <!-- Particles Background -->
+      <canvas
+        class="bg-particles"
+        id="bg-particles"
+        width="1920"
+        height="947"
+      ></canvas>
+
+      <!-- Start Welcome -->
+      <section
+        class="welcome section-content section background-parallax bg-image-1 fp-section active fp-table fp-completely"
+        data-anchor="welcome"
+        style="height: 570px"
+      >
+        <div class="fp-tableCell" style="height: 570px">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1
+                  class="section-title animated onstart fadeInUp visible"
+                  data-animation-delay="0"
+                  data-animation="fadeInUp"
+                >
+                  We are <span class="highlight f-bold">coming</span> here soon
+                </h1>
+                <div
+                  class="onstart animated text-left fadeInUp visible"
+                  data-animation-delay="100"
+                  data-animation="fadeInUp"
+                  id="clock"
+                >
+                  <div class="counter-container">
+                    <div class="counter-box first">
+                      <div class="number">99</div>
+                      <span>Day</span>
+                    </div>
+                    <div class="counter-box">
+                      <div class="number">02</div>
+                      <span>Hours</span>
+                    </div>
+                    <div class="counter-box">
+                      <div class="number">13</div>
+                      <span>Minutes</span>
+                    </div>
+                    <div class="counter-box last">
+                      <div class="number">49</div>
+                      <span>Seconds</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Start Footer -->
+    <footer class="page-footer">
+      <div class="container-full">
+        <div class="row">
+          <div class="col-sm-5">
+            <div>
+              <a href="#"></a>
+            </div>
+            <div class="copyright">© 2022 All rights reserved</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Start Scripts -->
+    <script src="./default/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootsrap plugins -->
+    <script src="./default/bootstrap.min.js"></script>
+
+    <!-- Countdown -->
+    <script src="./default/jquery.countdown.js"></script>
+
+    <!-- Particles -->
+    <script src="./default/particles.js"></script>
+
+    <!-- Moment -->
+    <script src="./default/moment.js"></script>
+
+    <!-- Main -->
+    <script src="./default/main.js"></script>
+    <!-- End Scripts -->
+  </body>
+</html>

@@ -1,0 +1,17 @@
+﻿DECLARE @customerId uniqueidentifier DECLARE CUSTOMER_CURSOR
+CURSOR LOCAL STATIC READ_ONLY FORWARD_ONLY
+FOR
+SELECT Id AS customerInfo
+FROM [Customer]
+WHERE Id not in
+    (SELECT [CustomerId]
+     FROM [CustomerPoint]);
+
+OPEN CUSTOMER_CURSOR FETCH NEXT
+FROM CUSTOMER_CURSOR INTO @customerId WHILE @@FETCH_STATUS = 0 BEGIN
+INSERT INTO [CustomerPoint] (Id, CustomerId, StoreId, AccumulatedPoint)
+VALUES (NEWID(),
+        @customerId,
+        NULL,
+        0) FETCH NEXT
+FROM CUSTOMER_CURSOR INTO @customerId END CLOSE CUSTOMER_CURSOR DEALLOCATE CUSTOMER_CURSOR

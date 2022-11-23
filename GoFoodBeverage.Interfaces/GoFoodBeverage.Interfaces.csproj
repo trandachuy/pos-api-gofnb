@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;DevRelease;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoFoodBeverage.Common\GoFoodBeverage.Common.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Domain\GoFoodBeverage.Domain.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Models\GoFoodBeverage.Models.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.POS.Models\GoFoodBeverage.POS.Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<Configurations>Debug;Release;Development;Staging;DevRelease;Production</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Features\Bill\**" />
+	  <EmbeddedResource Remove="Features\Bill\**" />
+	  <None Remove="Features\Bill\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\GoFoodBeverage.Delivery\GoFoodBeverage.Delivery.csproj" />
+		<ProjectReference Include="..\GoFoodBeverage.Domain\GoFoodBeverage.Domain.csproj" />
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="MediatR" Version="10.0.1" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="morelinq" Version="3.3.2" />
+		<PackageReference Include="MediatR" Version="10.0.1" />
+
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoFoodBeverage.Domain\GoFoodBeverage.Domain.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Interfaces\GoFoodBeverage.Interfaces.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.MemoryCaching\GoFoodBeverage.MemoryCaching.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Payment\GoFoodBeverage.Payment.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.POS.Models\GoFoodBeverage.POS.Models.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Services\GoFoodBeverage.Services.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Features\Fees\Commands\" />
+		<Folder Include="Features\Areas\Commands\" />
+		<Folder Include="Features\Languages\Commands\" />
+		<Folder Include="Features\Products\Commands\" />
+		<Folder Include="Features\Settings\Commands\" />
+	</ItemGroup>
+
+</Project>

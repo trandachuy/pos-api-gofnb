@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;Development;Staging;DevRelease;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoFoodBeverage.Domain\GoFoodBeverage.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

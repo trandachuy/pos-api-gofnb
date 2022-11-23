@@ -1,0 +1,311 @@
+﻿{
+  "messages": {
+    "createGroupPermissionSuccess": "Create group permission successfully!",
+    "leaveForm": "Do you want to proceed? All unsaved data will be lost!",
+    "confirmation": "Confirmation",
+    "createOptionSuccess": "Option has been created successful!",
+    "createLanguageStoreSuccess": "has been add successful",
+    "updateSuccess": "Update Success"
+  },
+
+  "leaveDialog": {
+    "confirmation": "Confirmation",
+    "discard": "Discard",
+    "confirmLeave": "Confirm leave"
+  },
+  "topBar": {
+    "hi": "Hi",
+    "updateProfile": "Update profile",
+    "logOut": "Log out",
+    "setting": "Setting"
+  },
+
+  "signIn": {
+    "text": "LOGIN",
+    "username": "Username",
+    "password": "Password",
+    "pleaseInputYourUsername": "Please input your username!",
+    "pleaseInputYourPassword": "Please input your password!",
+    "forgotPassword": "Forgot password",
+    "dontHaveAccount": "Not a member?",
+    "registerAccount": "Register Account",
+    "haveAccount": "Have already an account?",
+    "loginHere": "Login here",
+    "youHaveBeenLoggedInSuccessfully": "You have been logged in successfully."
+  },
+
+  "registerAccount": {
+    "register": "REGISTER",
+    "storeName": "Store name",
+    "inputStoreName": "Enter your store name"
+  },
+
+  "language": {
+    "changeLanguage": "Change language",
+    "chooseLanguage": "Choose language",
+    "vietnamese": "Vietnamese",
+    "english": "English",
+    "korean": "Korean",
+    "japanese": "Japanese",
+    "chinese": "Chinese",
+    "thailand": "Thai",
+    "malaysian": "Malay",
+    "indonesian": "Indonesian"
+  },
+
+  "button": {
+    "cancel": "Cancel",
+    "ok": "OK",
+    "addNew": "ADD NEW",
+    "save": "SAVE",
+    "confirmLeave": "Confirm leave",
+    "ignore": "Ignore",
+    "discard": "Discard",
+    "done": "Done",
+    "import": "Import",
+    "export": "Export",
+    "filter": "Filter"
+  },
+  "settings": {
+    "settingsTitle": "SETTINGS",
+    "tabStore": "STORE",
+    "tabBranchManagement": "BRANCH MANAGEMENT",
+    "tabStaffManagement": "STAFF MANAGEMENT",
+    "tabStaff": "Staff",
+    "tabPermissionGroup": "Permission Group",
+    "searchGroupPermissionPlaceHolder": "Search by Group name",
+    "groupPermissionTable": {
+      "no": "No",
+      "groupName": "Group Name",
+      "member": "Member",
+      "createdBy": "Created By",
+      "action": "Action"
+    },
+    "createGroupPermission": {
+      "titlePermission": "Permission",
+      "titleGeneralInformation": "General Information",
+      "titleCheckboxAllPermissionGoFB": "Full permission on GoF&B",
+      "lblInputName": "Name",
+      "placeholderInputName": "Input name",
+      "lblInputDescription": "DESCRIPTION",
+      "textFullPermission": "Full permissions on"
+    },
+    "createBranch": {
+      "titleCreateBranch": "Create new branch",
+      "branchName": "Branch name",
+      "inputBranchName": "Enter branch name",
+      "validBranchName": "Please enter branch name"
+    },
+    "localization": "LOCALIZATION"
+  },
+  "form": {
+    "description": "Description",
+    "maximum1000Characters": "Maximum is 1000 characters",
+    "fullName": "Full name",
+    "enterFullName": "Enter your full name",
+    "searchName": "Search by name",
+    "searchNameOrPhone": "Search by name or phone",
+    "phone": "Phone",
+    "inputPhone": "Enter your phone number",
+    "validPhone": "Please enter phone number",
+    "email": "Email",
+    "inputEmail": "Enter your email",
+    "validEmail": "Please enter email",
+    "currency": "Currency",
+    "selectCurrency": "Select local currency",
+    "businessModel": "Business model",
+    "selectBusinessModel": "Select your busines model",
+    "country": "Country",
+    "province": "Province",
+    "selectProvince": "Select province",
+    "validProvince": "Please select province/state",
+    "city": "City/ Town",
+    "inputCity": "Enter city/ town",
+    "validCity": "Please enter city/ town",
+    "district": "District",
+    "selectDistrict": "Select district",
+    "validDistrict": "Please select district",
+    "ward": "Ward",
+    "selectWard": "Select ward",
+    "validWard": "Please select ward",
+    "state": "State/ Region",
+    "selectState": "Select state/ region",
+    "zip": "ZIP/ Postal code",
+    "inputZip": "Enter ZIP/ postal code",
+    "validZip": "Please enter zip/ postal code",
+    "address": "Address",
+    "addressTwo": "Address 2",
+    "inputAddress": "Enter address",
+    "validAddress": "Please enter the address",
+    "inputAddressOne": "Unit number, building, street, etc",
+    "inputAddressTwo": "Apt, suite, unit, building, floor, etc",
+    "category": "Category",
+    "selectCategory": "Select category",
+    "setDefault": "Set default"
+  },
+  "table": {
+    "no": "No",
+    "name": "Name",
+    "options": "Options",
+    "branchName": " Branch Name",
+    "phone": "Phone",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "cost": "Cost",
+    "totalCost": "Total cost",
+    "sku": "Sku",
+    "createdBy": "Created By",
+    "status": "Status",
+    "action": "Action"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "material": {
+    "materialManagement": "Material Management",
+    "title": "Material",
+    "addMaterial": "Add new material",
+    "name": "Material name",
+    "pleaseEnterMaterialName": "Please enter material name",
+    "selectMaterialName": "--Select material--",
+    "pleaseSelectMaterial": "Please select material name",
+    "generalInformation": "General Information",
+    "nameMaterialExisted": "This material name is existed",
+    "addedSuccessfully": "Material is added successfully"
+  },
+  "staffManagement": {
+    "table": {
+      "no": "N.O",
+      "name": "NAME",
+      "phone": "PHONE",
+      "branch": "BRANCH",
+      "group": "GROUP",
+      "action": "ACTION"
+    },
+    "generalInformation": {
+      "title": "GENERAL INFORMATION",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Enter staff name",
+      "fullNameValidateMessage": "Please enter staff name",
+      "code": "Code",
+      "codePlaceholder": "Enter staff code",
+      "codeValidateMessage": "Please enter staff code",
+      "codeExisted": "Staff code is existed",
+      "codeInvalidMessage": "Allowed letters and number only",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter staff phone",
+      "phoneValidateMessage": "Please enter staff phone",
+      "phoneInvalidMessage": "Invalid phone number",
+      "phoneExisted": "Phone number is existed",
+      "email": "Email",
+      "emailPlaceholder": "Enter email",
+      "emailValidateMessage": "Please enter email",
+      "emailInvalidMessage": "Invalid email",
+      "emailExisted": "Email is existed",
+      "birthday": "Birthday",
+      "birthdayPlaceholder": "Enter birthday",
+      "male": "Male"
+    },
+    "permission": {
+      "title": "PERMISSION",
+      "addGroup": "Add group",
+      "group": "Group",
+      "selectGroup": "Select group",
+      "pleaseSelectGroup": "Please select group",
+      "branch": "Branch",
+      "selectBranch": "Select branch",
+      "pleaseSelectBranch": "Please select branch",
+      "allBranches": "All branches",
+      "cancel": "Cancel",
+      "create": "Create"
+    },
+    "staffAddedSuccessfully": "Staff is added successfully"
+  },
+  "productManagement": {
+    "title": "PRODUCT MANAGEMENT",
+    "table": {
+      "searchPlaceholder": "Search by product name",
+      "no": "N.O",
+      "name": "NAME",
+      "price": "PRICE",
+      "channel": "CHANNEL",
+      "status": "STATUS",
+      "action": "ACTION"
+    },
+    "addProduct": "ADD PRODUCT",
+    "generalInformation": {
+      "title": "GENERAL INFORMATION",
+      "name": "Name",
+      "namePlaceholder": "Enter product name",
+      "nameValidateMessage": "Please enter product name",
+      "description": "Description",
+      "uploadImage": "Select Image"
+    },
+    "pricing": {
+      "title": "PRICING",
+      "price": "Price",
+      "pricePlaceholder": "Enter price",
+      "priceNamePlaceholder": "Enter price name",
+      "priceNameValidateMessage": "Please enter price name",
+      "addPrice": "Add price",
+      "priceRange": "Value allowed from 0 to 999,999,999"
+    },
+    "unit": {
+      "title": "Unit",
+      "unitPlaceholder": "Select price",
+      "pleaseSelectUnit": "Please select unit for product",
+      "pleaseEnterNameUnit": "Please enter unit name",
+      "unitNameExisted": "This unit name is already existed"
+    },
+    "productNameExisted": "This product name is existed",
+    "fileSizeLimit": "File size upload should be less than 5MB",
+    "productAddedSuccess": "Product is added successfully",
+    "leaveWarningMessage": "Do you want to proceed? All unsaved data will be lost."
+  },
+  "option": {
+    "optionManagement": "Option Management",
+    "title": "Option",
+    "addOption": "Add new option",
+    "nameOption": "Name option",
+    "enterOptionName": "Enter option name",
+    "pleaseEnterNameOption": "Please enter option name",
+    "nameOptionExisted": "This option name is already existed",
+    "optionLevel": "Option level",
+    "addOptionLevel": "Add option level",
+    "enterOptionLevelName": "Enter option level",
+    "pleaseEnterNameOptionLevel": "Please enter option level"
+  },
+  "productCategory": {
+    "title": "CATEGORY MANAGEMENT",
+    "table": {
+      "searchPlaceholder": "Search by name",
+      "no": "N.O",
+      "name": "NAME",
+      "priority": "PRIORITY",
+      "product": "PRODUCT",
+      "action": "ACTION"
+    },
+    "pleaseEnterNameOptionLevel": "Please enter option level",
+    "selectOption": "Select option",
+    "pleaseSelectOption": "Please select option"
+  },
+  "inventoryTracking": {
+    "title": "Inventory Tracking",
+    "byMaterial": "Tracking inventory by material",
+    "pleaseEnterQuantity": "Please enter quantity"
+  },
+  "languageConfig": {
+    "title": "Language Config",
+    "addLanguage": "Add Language",
+    "addNewLanguage": "Add new language",
+    "selectLanguage": "---Select language---",
+    "language": "Language",
+    "translatedLanguages": "Translated languages",
+    "translatedContent": "These are the languages that your online shop themes and products data can be translated into",
+    "languages": "Languages",
+    "publish": "Publish",
+    "unpublish": "Unpublish"
+  }
+
+}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;Development;Staging;DevRelease;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="ExcelDataReader.Mapping" Version="2.2.2" />
+	<ProjectReference Include="..\GoFoodBeverage.Common\GoFoodBeverage.Common.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Domain\GoFoodBeverage.Domain.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.POS.Models\GoFoodBeverage.POS.Models.csproj" />
+  </ItemGroup>
+
+</Project>

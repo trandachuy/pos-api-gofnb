@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;Development;Staging;DevRelease;Production</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="configuration\appsettings.LMR.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\assets\images\" />
+    <Folder Include="wwwroot\logos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="configuration\appsettings.LMR.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GoFoodBeverage.Application\GoFoodBeverage.Application.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Delivery\GoFoodBeverage.Delivery.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Email\GoFoodBeverage.Email.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Models\GoFoodBeverage.Models.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Payment\GoFoodBeverage.Payment.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Services\GoFoodBeverage.Services.csproj" />
+    <ProjectReference Include="..\GoFoodBeverage.Storage\GoFoodBeverage.Storage.csproj" />
+    <ProjectReference Include="..\GoogleServices\GoogleServices.csproj" />
+  </ItemGroup>
+
+	<Choose>
+		<When Condition="'$(Configuration)' == 'Development'">
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+				<None Include="appsettings.Development.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+				<Content Remove="appsettings.*.json;appsettings.json" />
+			</ItemGroup>
+		</When>
+		<When Condition="'$(Configuration)' == 'Production'">
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+				<None Include="appsettings.Production.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+				<Content Remove="appsettings.*.json;appsettings.json" />
+			</ItemGroup>
+		</When>
+		<When Condition="'$(Configuration)' == 'Staging'">
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+				<None Include="appsettings.Staging.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+				<Content Remove="appsettings.*.json;appsettings.json" />
+			</ItemGroup>
+		</When>
+		<When Condition="'$(Configuration)' == 'DevRelease'">
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+				<None Include="appsettings.DevRelease.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+				<Content Remove="appsettings.*.json;appsettings.json" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+				<None Include="appsettings.Development.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+				<Content Remove="appsettings.*.json;appsettings.json" />
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+
+	<ProjectExtensions><VisualStudio><UserProperties appsettings_1development_1json__JsonSchema="https://beaujs.com/schema.json" /></VisualStudio></ProjectExtensions>
+</Project>
